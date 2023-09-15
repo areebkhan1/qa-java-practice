@@ -2,7 +2,9 @@ package conditionalexercise;
 import java.util.Scanner;
 public class Main {
 
+
     public static void main(String[] args) {
+        /*
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
@@ -34,6 +36,41 @@ public class Main {
         }
         else{
             System.out.println("not a valid traffic light colour.");
+        } */
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number between 1 and 12");
+        int num12 = scanner.nextInt();
+
+        switch (num12) {
+            case 1:
+            case 2:
+            case 11:
+            case 12:
+                System.out.println("Winter");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Spring");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Summer");
+                break;
+            case 9:
+            case 10:
+                System.out.println("Autumn");
+                break;
+            default:
+                System.out.println("Invalid month, enter a number between 1-12");
+                break;
         }
+
+
+
+
     }
 }
