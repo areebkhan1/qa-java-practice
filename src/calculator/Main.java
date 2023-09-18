@@ -6,9 +6,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("enter a number");
-        int x = scanner.nextInt();
+        double x = scanner.nextDouble();
         System.out.println("enter another number");
-        int y = scanner.nextInt();
+        double y = scanner.nextDouble();
 
         System.out.println("enter an operator");
         String operator = scanner.next();
@@ -25,12 +25,15 @@ public class Main {
           case "/":
               System.out.println(x/y);
               break;
+          case "%":
+              System.out.println(x%y);
+              break;
+          case "^":
+              System.out.println(Math.pow(x, y));
+              break;
           default:
-              System.out.println("invalid operator, must be +. -. *. /");
+              System.out.println("invalid operator, must be +. -. *. /, ^, %");
               break;
       }
-
-
-
     }
 }
